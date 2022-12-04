@@ -12,12 +12,13 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8081/api/emp/employees",
-					"protocol": "http",
+					"raw": "https://101306676-comp3123-assignment2-backend.vercel.app/api/emp/employees",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"101306676-comp3123-assignment2-backend",
+						"vercel",
+						"app"
 					],
-					"port": "8081",
 					"path": [
 						"api",
 						"emp",
@@ -34,7 +35,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n\"first_name\": \"Tam\",\r\n\"last_name\": \"Harrow\",\r\n\"email\" : \"tam@hollywood.com\",\r\n\"gender\": \"Male\",\r\n\"salary\": 125500.00\r\n}",
+					"raw": "{\r\n\"first_name\": \"Tam\",\r\n\"last_name\": \"Harrow\",\r\n\"email\" : \"tam1@hollywood.com\",\r\n\"gender\": \"Male\",\r\n\"salary\": 125500.00\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -42,12 +43,13 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8081/api/emp/employees",
-					"protocol": "http",
+					"raw": "https://101306676-comp3123-assignment2-backend.vercel.app/api/emp/employees",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"101306676-comp3123-assignment2-backend",
+						"vercel",
+						"app"
 					],
-					"port": "8081",
 					"path": [
 						"api",
 						"emp",
@@ -63,17 +65,18 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8081/api/emp/employees/634c6ee048df840140d40b61",
-					"protocol": "http",
+					"raw": "https://101306676-comp3123-assignment2-backend.vercel.app/api/emp/employees/638bdffef8106d5d50f781a9",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"101306676-comp3123-assignment2-backend",
+						"vercel",
+						"app"
 					],
-					"port": "8081",
 					"path": [
 						"api",
 						"emp",
 						"employees",
-						"634c6ee048df840140d40b61"
+						"638bdffef8106d5d50f781a9"
 					]
 				}
 			},
@@ -86,7 +89,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n\"first_name\": \"Tam\",\r\n\"last_name\": \"Harrow\",\r\n\"email\" : \"tam@hollywood.com\",\r\n\"gender\": \"Male\",\r\n\"salary\": 126500.00\r\n}",
+					"raw": "{\r\n    \"first_name\": \"Phuong\",\r\n    \"last_name\": \"Hoang\",\r\n    \"email\": \"diemphuong1291@gmail.com\",\r\n    \"gender\": \"Female\",\r\n    \"salary\": 25000\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -94,12 +97,13 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8081/api/emp/employees/634c6ee048df840140d40b61",
-					"protocol": "http",
+					"raw": "https://101306676-comp3123-assignment2-backend.vercel.app/api/emp/employees/634c6ee048df840140d40b61",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"101306676-comp3123-assignment2-backend",
+						"vercel",
+						"app"
 					],
-					"port": "8081",
 					"path": [
 						"api",
 						"emp",
@@ -116,12 +120,13 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8081/api/emp/employees?eid=634c6f7a48df840140d40b67",
-					"protocol": "http",
+					"raw": "https://101306676-comp3123-assignment2-backend.vercel.app/api/emp/employees?eid=638cf84e11e8cc000880adbd",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"101306676-comp3123-assignment2-backend",
+						"vercel",
+						"app"
 					],
-					"port": "8081",
 					"path": [
 						"api",
 						"emp",
@@ -130,7 +135,7 @@
 					"query": [
 						{
 							"key": "eid",
-							"value": "634c6f7a48df840140d40b67"
+							"value": "638cf84e11e8cc000880adbd"
 						}
 					]
 				}
@@ -144,7 +149,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n\"username\": \"p@p.com\",\r\n\"email\": \"p@p.com\",\r\n\"password\": \"password$123\"\r\n}",
+					"raw": "{\r\n\"username\": \"tester\",\r\n\"email\": \"test@email.com\",\r\n\"password\": \"password$123\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -152,16 +157,23 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8081/api/user/signup",
-					"protocol": "http",
+					"raw": "https://101306676-comp3123-assignment2-backend.vercel.app/api/user/signup?",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"101306676-comp3123-assignment2-backend",
+						"vercel",
+						"app"
 					],
-					"port": "8081",
 					"path": [
 						"api",
 						"user",
 						"signup"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null
+						}
 					]
 				}
 			},
@@ -182,12 +194,13 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8081/api/user/login",
-					"protocol": "http",
+					"raw": "https://101306676-comp3123-assignment2-backend.vercel.app/api/user/login",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"101306676-comp3123-assignment2-backend",
+						"vercel",
+						"app"
 					],
-					"port": "8081",
 					"path": [
 						"api",
 						"user",
