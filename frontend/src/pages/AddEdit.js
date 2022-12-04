@@ -3,6 +3,7 @@ import { useNavigate, useLocation, useParams, Link} from 'react-router-dom'
 import "../css/AddEdit.css"
 import axios from 'axios'
 import { toast } from 'react-toastify'
+import Header from '../components/Header'
 
 const initialState = {
   first_name: "",
@@ -74,7 +75,10 @@ const AddEdit = () => {
 
 
   return (
-    <div style={{marginTop: "100px"}}>
+    <div>
+      <Header />
+      <div style={{marginTop: "100px"}}>
+        
         <form style={{margin: "auto", padding: "15px", maxWidth: "400px", alignContent: "center",}}
           onSubmit={handleSubmit}
         >
@@ -129,6 +133,8 @@ const AddEdit = () => {
             </Link>
         </form>
     </div>
+    </div>
+    
   )
 }
 

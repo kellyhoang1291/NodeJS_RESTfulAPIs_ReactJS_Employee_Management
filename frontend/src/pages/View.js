@@ -3,6 +3,7 @@ import { useNavigate, useLocation, useParams, Link} from 'react-router-dom'
 import "../css/View.css"
 import axios from 'axios'
 import { toast } from 'react-toastify'
+import Header from '../components/Header'
 
 const View = () => {
   const [employee, setEmployee] = useState([])
@@ -25,7 +26,9 @@ const View = () => {
   }
 
   return (
-    <div style={{marginTop: "150px"}}>
+    <div>
+      <Header />
+      <div style={{marginTop: "150px"}}>
         <div className='card'>
           <div className='card-header'>
             <h3>Employee Details</h3>
@@ -53,6 +56,9 @@ const View = () => {
           </div>
         </div>
     </div>
+
+    </div>
+    
   )
 }
 
