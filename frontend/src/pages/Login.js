@@ -18,7 +18,7 @@ const Login = () => {
 
   const authenUser = async (data) => {
     try {
-      const response = await axios.post(`http://localhost:8081/api/user/login`, data);
+      const response = await axios.post(`https://101306676-comp3123-assignment2-backend.vercel.app/api/user/login`, data);
       setTimeout(() => navigate("/employees"), 500)
     } catch (error) {
       toast.error("Invalid username or password")

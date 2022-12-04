@@ -18,7 +18,7 @@ const Signup = () => {
   const navigate = useNavigate();
 
   const addUser = async (data) => {
-    const response = await axios.post(`http://localhost:8081/api/user/signup`, data);
+    const response = await axios.post(`https://101306676-comp3123-assignment2-backend.vercel.app/api/user/signup`, data);
     if (response.status === 201){
       toast.success("Congrats, now you can login with your username and password.")
       setTimeout(() => navigate("/"), 500)

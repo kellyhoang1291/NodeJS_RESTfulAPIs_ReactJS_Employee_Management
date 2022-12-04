@@ -27,21 +27,21 @@ const AddEdit = () => {
   }, [eid])
 
   const getSingleEmployee = async (eid) => {
-    const response = await axios.get(`http://localhost:8081/api/emp/employees/${eid}`)
+    const response = await axios.get(`https://101306676-comp3123-assignment2-backend.vercel.app/api/emp/employees/${eid}`)
     if (response.status === 200){
       setState({ ...response.data })
     }
   }
 
   const addEmployee = async (data) => {
-    const response = await axios.post(`http://localhost:8081/api/emp/employees`, data);
+    const response = await axios.post(`https://101306676-comp3123-assignment2-backend.vercel.app/api/emp/employees`, data);
     if (response.status === 201){
       toast.success(response.data)
     }
   }
 
   const updateEmployee = async (data, eid) => {
-    const response = await axios.put(`http://localhost:8081/api/emp/employees/${eid}`, data);
+    const response = await axios.put(`https://101306676-comp3123-assignment2-backend.vercel.app/api/emp/employees/${eid}`, data);
     if (response.status === 200){
       toast.success(response.data)
     }

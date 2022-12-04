@@ -15,8 +15,10 @@ const View = () => {
     }
   }, [eid])
 
+  
+
   const getSingleEmployee = async (eid) => {
-    const response = await axios.get(`http://localhost:8081/api/emp/employees/${eid}`)
+    const response = await axios.get(`https://101306676-comp3123-assignment2-backend.vercel.app/api/emp/employees/${eid}`)
     if (response.status === 200){
       setEmployee({ ...response.data })
     }

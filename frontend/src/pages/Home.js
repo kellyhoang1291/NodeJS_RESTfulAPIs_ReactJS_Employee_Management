@@ -13,7 +13,7 @@ const Home = () => {
   }, [])
 
   const getEmployees = async () => {
-    const response = await axios.get(`http://localhost:8081/api/emp/employees`);
+    const response = await axios.get(`https://101306676-comp3123-assignment2-backend.vercel.app/api/emp/employees`);
     if (response.status === 200){
       setData(response.data);
     }
@@ -21,7 +21,7 @@ const Home = () => {
   
   const onDeleteEmployee = async (eid) => {
     if (window.confirm("Are you sure you want to delete this employee?")){
-      const response = await axios.delete(`http://localhost:8081/api/emp/employees?eid=${eid}`)
+      const response = await axios.delete(`https://101306676-comp3123-assignment2-backend.vercel.app/api/emp/employees?eid=${eid}`)
       if (response.status === 204){
         toast.success("Employee deleted successfully");
         getEmployees();
